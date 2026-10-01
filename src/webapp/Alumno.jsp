@@ -27,7 +27,7 @@
             alumno = alumnoService.findById( id );
         }
     %>
-    <table class="table">
+    <table class="table table-success">
         <thead>
         <tr class="table-dark" align="center">
             <th scope="col" colspan="2" >Información</th>

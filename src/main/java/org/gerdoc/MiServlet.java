@@ -1,5 +1,8 @@
 package org.gerdoc;
 
+import org.gerdoc.dao.impl.AlumnoDaoImpl;
+import org.gerdoc.service.impl.AlumnoServiceImpl;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,9 +25,10 @@ public class MiServlet extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
+
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String url = "jdbc:mysql://127.0.0.1/TEST?user=root&password=1234";
+        String url = "jdbc:mysql://127.0.0.1/ESCUELA?user=root&password=n0m3l0";
         String sql = "INSERT INTO TBL_ROL(ROL,DESCRIPCION) VALUES(?,?)";
         int row = 0;
         resp.setContentType("text/html;charset=UTF-8");

@@ -15,3 +15,5 @@ VALUES
     ('ANA', 20, 9.50),
     ('CARLOS', 22, 8.70),
     ('MARIA', 19, 9.10);
+    
+select * from alumno;
